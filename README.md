@@ -6,13 +6,17 @@
 
 1. Clone the project
    
-2. Run `terraform init`
+3. Zip the lambda code (the .py file must be at the root of your .zip file)
+
+4. Create an S3 bucket to upload the zip file and update the S3_bucket and S3_key in lambda.tf
    
-3. Run `terraform apply`
+5. Run `terraform init`
    
-4. Try the app using a curl query using the invokeURL of the API Gateway stage, which you can obtain from the output of the Terraform code or directly from the AWS Management Console (you can use the example in [this article](https://medium.com/@lucas.ludicsa99/texttospeechconvertertext-to-speech-converter-using-aws-lambda-polly-and-api-gateway-bf814d2bbe84) )
+6. Run `terraform apply`
    
-5. Once you've finished testing, remember to run `terraform destroy` to delete all resources if you no longer need them.
+7. Try the app using a curl query using the invokeURL of the API Gateway stage, which you can obtain from the output of the Terraform code or directly from the AWS Management Console (you can use the example in [this article](https://medium.com/@lucas.ludicsa99/texttospeechconvertertext-to-speech-converter-using-aws-lambda-polly-and-api-gateway-bf814d2bbe84) )
+   
+8. Once you've finished testing, remember to run `terraform destroy` to delete all resources if you no longer need them.
 
 ## Remark
 You need to provide the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY credentials to allow Terraform to connect and authenticate successfully to AWS. These credentials can be embedded directly into the Terraform code (although this is not considered best practice), 
