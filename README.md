@@ -4,7 +4,7 @@
 TTS Converter App is a simple AWS application used to transform text into speech. The first challenge involves writing its corresponding Terraform code.
 
 
-# Steps to deploy the solution of challenge 1
+# Steps to run the solution of challenge 1
 
 1. Clone the project
    
