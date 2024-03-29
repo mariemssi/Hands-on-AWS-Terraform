@@ -1,8 +1,10 @@
-# Architecture of TTS Converter App (A simple AWS app to transform a text to speech)
+# TTS Converter App - Challenge 1 - Terraform code
 ![image](https://github.com/mariemssi/TTS-Converter-Challenge-1/assets/69463864/fd77f547-5198-4866-b89a-71d7dcfe7889)
 
+TTS Converter App is a simple AWS application used to transform text into speech. The first challenge involves writing its corresponding Terraform code.
 
-# Steps to deploy the app
+
+# Steps to deploy the solution of challenge 1
 
 1. Clone the project
    
